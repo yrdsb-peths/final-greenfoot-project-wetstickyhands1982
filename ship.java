@@ -14,6 +14,24 @@ public class ship extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        move(3);
+        if(Greenfoot.getRandomNumber(100) <10)
+        {
+            turn(Greenfoot.getRandomNumber(15) -30);
+        }
+        captureDolphin();
     }
+    public void captureDolphin()
+    {
+      if(isTouching(dolphin.class))
+      {
+          removeTouching(dolphin.class);
+          getWorld().showText("Game Over",300,200);
+          
+      }
+    }
+    
+    
+    
+    
 }
