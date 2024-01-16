@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ship here.
+ * Write a description of class diver here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ship extends Actor
+public class diver extends Actor
 {
     /**
      * Act - do whatever the ship wants to do. This method is called whenever
@@ -14,10 +14,10 @@ public class ship extends Actor
      */
     public void act()
     {
-        move(3);
+        move(2);
         if(Greenfoot.getRandomNumber(100) <10)
         {
-            turn(Greenfoot.getRandomNumber(15) -30);
+            turn(Greenfoot.getRandomNumber(10) -20);
         }
         captureDolphin();
     }
@@ -26,7 +26,6 @@ public class ship extends Actor
       if(isTouching(dolphin.class))
       {
           removeTouching(dolphin.class);
-          getWorld().showText("Game Over",300,200);
           
       }
     }
@@ -35,3 +34,5 @@ public class ship extends Actor
     
     
 }
+
+

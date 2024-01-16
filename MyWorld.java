@@ -19,6 +19,11 @@ public class MyWorld extends World
         super(600, 400, 1);
         dolphin dolphin = new dolphin();
         addObject(dolphin, 300, 300);
+        diver diver = new diver();
+        
+        
+        
+        
         
     }
     public void act()
