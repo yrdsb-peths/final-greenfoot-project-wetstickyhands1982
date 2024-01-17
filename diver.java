@@ -26,8 +26,11 @@ public class diver extends Actor
       if(isTouching(dolphin.class))
       {
           removeTouching(dolphin.class);
-          
+          Greenfoot.stop();
       }
+      
+             
+        
     }
     
     
